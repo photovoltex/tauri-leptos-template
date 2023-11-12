@@ -1,0 +1,25 @@
+cargo-features = [ "per-package-target" ]
+
+[workspace]
+members = ["src-tauri"]
+resolver = "1"
+
+[package]
+name = "tauri-leptos-template-ui"
+version = "0.0.0"
+edition = "2021"
+default-target = "wasm32-unknown-unknown"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+leptos = { version = "0.5.2", features = [ "csr" ]}
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.6.1"
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+leptonic = "0.3.0"
+
+[build-dependencies]
+leptonic-theme = "0.3.0"
+leptos-tiptap-build = "0.2.4"
