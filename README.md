@@ -1,8 +1,14 @@
 # Tauri + Leptos
 
+> Replace all "tauri-leptos-template" with your app name before continuing.
+
 This template should help get you started developing with Tauri and Leptos.
 
-Replace all "tauri-leptos-template" with your app name before continuing.
+This template uses some opt-in features which intents to improve the overall developing experience. For example:
+- `per-package-target` cargo-feature (used by the root project)
+  - allows to configure a project so that cargo already knows how to compile it 
+    > otherwise a whole project build wouldn't be possible without errors (due to different target between ui and app)
+
 
 ## Setup
 
